@@ -22,7 +22,7 @@ class FixtureLoadCommand extends Command
     /**
      * @param FixtureLoader $loader
      */
-    protected function setLoader($loader)
+    public function setLoader($loader)
     {
         $this->loader = $loader;
     }
@@ -30,7 +30,7 @@ class FixtureLoadCommand extends Command
     /**
      * @param array $data
      */
-    protected function setData($data)
+    public function setData($data)
     {
         $this->data = $data;
     }
