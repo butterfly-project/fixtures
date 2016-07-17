@@ -1,0 +1,29 @@
+{
+    "name": "butterfly/fixtures",
+    "type": "library",
+    "description": "Butterfly PHP. Fixtures Component",
+    "keywords": ["Fixtures"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marat Fakhertdinov",
+            "email": "marat.fakhertdinov@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+
+        "butterfly/packages": "2.0.x-dev",
+        "butterfly/adapter-doctrine": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.4.6"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Butterfly\\Component\\Fixtures\\": "src/",
+            "Butterfly\\Component\\Fixtures\\Tests\\": "tests/"
+        }
+    }
+}
