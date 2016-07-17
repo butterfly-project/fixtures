@@ -8,4 +8,7 @@ services:
 
   bfy.fixtures.command.load:
     class: 'Butterfly\Component\Fixtures\Command\FixtureLoadCommand'
+    calls:
+      - ['setLoader', ['@bfy.fixtures.loader']]
+      - ['setData', ['%bfy.fixtures.data%']]
     tags:  'bfy_app.sf2_console.commands'
