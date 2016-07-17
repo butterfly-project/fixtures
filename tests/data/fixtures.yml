@@ -1,0 +1,10 @@
+- table:          'refs'
+  relations:
+    parent_id:    'refs'
+  defaults:
+    is_ref:       false
+    description:  ''
+  data:
+    - { __id: 'r_cities',  code: 'r.cities', name: 'Справочник городов', is_ref: true }
+    - { __id: 'moscov',    parent_id: 'r_cities', code: 'moscov',  name: 'Москва' }
+    - { __id: 'nsk',       parent_id: 'r_cities', code: 'nsk',     name: 'Новосибирск' }

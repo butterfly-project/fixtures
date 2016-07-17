@@ -1,0 +1,5 @@
+services:
+
+  bfy.fixtures.loader:
+    class:      'Butterfly\Component\Fixtures\FixtureLoader'
+    arguments:  ['@bfy_adapter.doctrine.connection']
