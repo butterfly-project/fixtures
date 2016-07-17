@@ -1,5 +1,11 @@
+bfy.fixtures.data: []
+
 services:
 
   bfy.fixtures.loader:
     class:      'Butterfly\Component\Fixtures\FixtureLoader'
     arguments:  ['@bfy_adapter.doctrine.connection']
+
+  bfy.fixtures.command.load:
+    class: 'Butterfly\Component\Fixtures\Command\FixtureLoadCommand'
+    tags:  'bfy_app.sf2_console.commands'

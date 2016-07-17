@@ -7,4 +7,3 @@ CHANGELOG
 Added functionality:
 
  * Loaded data to db
-
